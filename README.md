@@ -13,7 +13,7 @@ building a strong conceptual foundation of Java.
 
 | #  | Topic          | Notes    |
 |----|----------------|----------|
-| 01 | Basics         | [Link]() |
+| 01 | Basics         | [Link](01-basics/README.md) |
 | 02 | OOP            | [Link]() |
 | 03 | Collections    | [Link]() |
 | 04 | Streams        | [Link]() |
