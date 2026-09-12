@@ -6,7 +6,7 @@ Fundamental concepts that form the foundation of Java programming.
 
 | # | Topic | Status |
 |---|-------|--------|
-| 01 | [Introduction](01-introduction.md) | 🟡 |
+| 01 | [Introduction](01-introduction.md) | ✅ |
 | 02 | [Variables](02-variables.md) | ⬜ |
 | 03 | [Data Types](03-data-types.md) | ⬜ |
 | 04 | [Operators](04-operators.md) | ⬜ |
