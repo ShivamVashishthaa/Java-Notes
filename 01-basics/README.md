@@ -8,8 +8,8 @@ Fundamental concepts that form the foundation of Java programming.
 |----|----------------------------------------------------------|--------|
 | 01 | [Introduction](01-introduction.md)                       | ✅     |
 | 02 | [Variables & Data Types](02-variables-and-data-types.md) | ✅     |
-| 03 | [Operators](03-operators.md)                             | ⬜     |
-| 04 | [Conditionals](04-conditionals.md)                       | ⬜     |
+| 03 | [Operators](03-operators.md)                             | ✅     |
+| 04 | [Conditionals](04-conditionals.md)                       | 🟡     |
 | 05 | [Loops](05-loops.md)                                     | ⬜     |
 | 06 | [Arrays](06-arrays.md)                                   | ⬜     |
 | 07 | [Methods](07-methods.md)                                 | ⬜     |
@@ -25,4 +25,4 @@ Fundamental concepts that form the foundation of Java programming.
 
 ---
 
-[← Back to Root README](../README.md) | [Next: OOP →](../02-oop/README.md)
+[← Back to Root README](../README.md) | [Next: Java Virtual Machine →](../02-jvm/README.md)

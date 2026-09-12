@@ -104,4 +104,4 @@ Four pillars:
 
 ---
 
-[← Back to Basics Index](README.md) | [Next: Variables →](02-variables-and-data-types.md)
+[← Back to Basics Index](README.md) | [Next: Variables and data types →](02-variables-and-data-types.md)

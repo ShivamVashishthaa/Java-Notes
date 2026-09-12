@@ -1,7 +1,7 @@
 # Variables & data types  in Java
 
 > **Section**: Basics  
-> **Topic**: 02 — Variables-and-data-types
+> **Topic**: 02 — Variables-and-data-types   
 > **Last Updated**: 2026-09-12  
 > **Status**: ✅ Complete
 
@@ -31,18 +31,20 @@ Data type define which type of data a variable can contain.
 In java, we have 8 type of primitive data types and reference data type.
 
 ```java
+private void method() {
 // Primitives
-byte b = 123;
-short s = 23;
-char c = 'a';
-int age = 25;
-long year = 1198L;
-float price = 10.00f;
-double finalPrice = 10.00;
-boolean bool = false;
+    byte b = 123;
+    short s = 23;
+    char c = 'a';
+    int age = 25;
+    long year = 1198L;
+    float price = 10.00f;
+    double finalPrice = 10.00;
+    boolean bool = false;
 
 // Reference type
-String name = "Shiva";
+    String name = "Shiva";
+}
 ```
 
 ---
@@ -63,7 +65,7 @@ public class Demo {
     // x = 10 // wrong initialization
     int y = 10; // declaration + initialization
 
-    public static void main(String[] args) {
+    private void method() {
         new Demo().x = 11;// initialization
     }
 }
@@ -78,7 +80,7 @@ public class Demo {
     Object ob1; // declaration
     Object ob2 = new Object(); // declaration + initialization
 
-    public static void main(String[] args) {
+    public void method() {
         new Demo().ob1 = new Object();// initialization
     }
 }
@@ -120,6 +122,8 @@ In Java, variables are classified in two ways:
 
 - **Primitive variables**: Primitive variables are variables that store the actual value directly
 - **Reference variables**: Reference variables are variables that store the address of the Objects.
+
+---
 
 ### Difference Between Primitive and Reference Variables
 
@@ -254,6 +258,8 @@ class (methods, constructors, blocks).
 **Static Variable Scope**: A static variable is also accessible throughout the
 class, but accessed through the ClassName.
 
+---
+
 ### Variable naming rules and conventions
 
 Java has two levels of naming guidance:
@@ -273,48 +279,66 @@ Java has two levels of naming guidance:
 | Meaningful names                 | Convention | `int customerAge;`   |
 | Boolean as question              | Convention | `boolean isActive;`  |
 
+---
+
 ### `var` keyword for local variable type inference
 
-`var` (Java 10+) lets the compiler infer the type of a local variable from its initializer.
+`var` (Java 10+) lets the compiler infer the type of local variable from its initializer.
 
 ```java
-var age = 25;           // int
-var name = "Shivam";    // String
-var price = 99.99;      // double
+private void method() {
+    var age = 25;           // int
+    var name = "Shivam";    // String
+    var price = 99.99;      // double
+}
 ```
 
 ### Rules
 
 1. **Only for local variables**
-   ```java
+
+```java
    public void method() {
-       var x = 10;   // OK
-   }
-   ```
+    var x = 10;   // OK
+}
+```
 
 2. **Initialization is required**
-   ```java
-   var x = 10;   // OK
-   var y;        // ERROR
-   ```
+
+```java
+private void method() {
+    var x = 10;   // OK
+    var y;        // ERROR
+}
+```
 
 3. **Cannot be `null`**
-   ```java
-   var x = null;   // ERROR
-   ```
+
+```java
+private void method() {
+    var x = null;   // ERROR
+}
+```
 
 4. **Cannot be used with lambdas or array literals**
-   ```java
-   var lambda = () -> {};      // ERROR
-   var arr = {1, 2, 3};         // ERROR
-   var arr = new int[]{1,2,3};  // OK
-   ```
+
+```java
+private void method() {
+    var lambda = () -> {
+    };      // ERROR
+    var arr = {1, 2, 3};         // ERROR
+    var arr = new int[]{1, 2, 3};  // OK
+}
+```
 
 5. **Type is fixed after inference**
-   ```java
-   var x = 10;      // x is int
-   x = "Hello";     // ERROR
-   ```
+
+```java
+private void method() {
+    var x = 10;      // x is int
+    x = "Hello";     // ERROR
+}
+```
 
 ### When to Use
 
@@ -325,15 +349,13 @@ var price = 99.99;      // double
 ### Examples
 
 ```java
-var list = new ArrayList<String>();
-var map = new HashMap<String, Integer>();
-var numbers = List.of(1, 2, 3);
-
-for(
-var num :numbers){
-        System.out.
-
-println(num);
+private void method() {
+  var list = new ArrayList<String>();
+  var map = new HashMap<String, Integer>();
+  var numbers = List.of(1, 2, 3);
+  for (var num : numbers) {
+    System.out.println(num);
+  }
 }
 ```
 
@@ -355,4 +377,4 @@ println(num);
 ---
 
 
-[← Previous: Introduction to Java](01-introduction.md) | [Back to Index](README.md) | [Next: Memory Storage →](03-operators.md)
+[← Previous: Introduction to Java](01-introduction.md) | [Back to Index](README.md) | [Next: Operators →](03-operators.md)
