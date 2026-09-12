@@ -2,7 +2,7 @@
 
 > **Section**: Basics  
 > **Topic**: 01 — Introduction  
-> **Last Updated**: 2024-01-15  
+> **Last Updated**: 2026-09-12  
 > **Status**: ✅ Complete
 
 ## 📌 What You'll Learn
