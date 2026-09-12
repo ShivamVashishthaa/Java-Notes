@@ -11,22 +11,42 @@ building a strong conceptual foundation of Java.
 
 ## 📑 Index
 
-| #  | Topic          | Notes    |
-|----|----------------|----------|
-| 01 | Basics         | [Link](01-basics/README.md) |
-| 02 | OOP            | [Link]() |
-| 03 | Collections    | [Link]() |
-| 04 | Streams        | [Link]() |
-| 05 | Multithreading | [Link]() |
+| #  | Topic                        | Notes                       |
+|----|------------------------------|-----------------------------|
+| 01 | Basics                       | [Link](01-basics/README.md) |
+| 02 | JVM                          | [Link]()                    |
+| 03 | OOP                          | [Link]()                    |
+| 04 | Exception Handling           | [Link]()                    |
+| 05 | String & StringBuilder       | [Link]()                    |
+| 06 | Wrapper Classes & Autoboxing | [Link]()                    |
+| 07 | Collections Framework        | [Link]()                    |
+| 08 | Generics                     | [Link]()                    |
+| 09 | Lambda Expressions           | [Link]()                    |
+| 10 | Streams API                  | [Link]()                    |
+| 11 | Optional                     | [Link]()                    |
+| 12 | Date & Time API              | [Link]()                    |
+| 13 | File I/O                     | [Link]()                    |
+| 14 | Regex                        | [Link]()                    |
+| 15 | Multithreading               | [Link]()                    |
 
 ---
 
 ## 📌 Progress
 
-- [ ] Basics (in progress)
+- [x] Basics (in progress)
+- [ ] JVM
 - [ ] OOP
-- [ ] Collections
-- [ ] Streams
+- [ ] Exception Handling
+- [ ] String & StringBuilder
+- [ ] Wrapper Classes & Autoboxing
+- [ ] Collections Framework
+- [ ] Generics
+- [ ] Lambda Expressions
+- [ ] Streams API
+- [ ] Optional
+- [ ] Date & Time API
+- [ ] File I/O
+- [ ] Regex
 - [ ] Multithreading
 
 ---

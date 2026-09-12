@@ -2,21 +2,26 @@
 
 > **Section**: Basics  
 > **Topic**: 01 — Introduction  
-> **Last Updated**: 2024-01-15  
+> **Last Updated**: 2026-09-12  
 > **Status**: ✅ Complete
 
 ## 📌 What You'll Learn
 
-- What is Java?
-- Why is Java popular?
-- Core features of Java
-- Where Java is used
+- [What is Java?](#what-is-java)
+- [Why is Java popular?](#why-is-java-so-popular)
+- [Core features of Java](#javas-core-features)
+- [Java Architecture](#java-architecture)
+- [Where Java is used](#where-java-is-used)
 
 ---
 
-Java is a high-level, object-oriented, platform-independent programming language developed by James Gosling at Sun Microsystems in 1995. It is now owned by Oracle Corporation.
+## What is Java?
 
-**Key idea:** "Write Once, Run Anywhere" (WORA) — Java code compiled on one machine can run on any other machine that has a Java Virtual Machine (JVM).
+Java is a high-level, object-oriented, platform-independent programming language developed by James Gosling at Sun
+Microsystems in 1995. It is now owned by Oracle Corporation.
+
+**Key idea:** "Write Once, Run Anywhere" (WORA) — Java code compiled on one machine can run on any other machine that
+has a Java Virtual Machine (JVM).
 
 ---
 
@@ -67,11 +72,11 @@ Four pillars:
 
 ## Java Architecture
 
-| Term | Full Form | What It Is |
-|------|-----------|------------|
-| **JVM** | Java Virtual Machine | Runs bytecode |
-| **JRE** | Java Runtime Environment | JVM + libraries (to run Java apps) |
-| **JDK** | Java Development Kit | JRE + compiler + tools (to develop Java apps) |
+| Term    | Full Form                | What It Is                                    |
+|---------|--------------------------|-----------------------------------------------|
+| **JVM** | Java Virtual Machine     | Runs bytecode                                 |
+| **JRE** | Java Runtime Environment | JVM + libraries (to run Java apps)            |
+| **JDK** | Java Development Kit     | JRE + compiler + tools (to develop Java apps) |
 
 **Rule:** To **run** Java → JRE. To **develop** Java → JDK.
 
@@ -99,4 +104,4 @@ Four pillars:
 
 ---
 
-[← Back to Basics Index](README.md) | [Next: Variables →](02-variables.md)
+[← Back to Basics Index](README.md) | [Next: Variables →](02-variables-and-data-types.md)
