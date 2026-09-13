@@ -10,10 +10,8 @@
 ## 📌 What You'll Learn
 
 - [What operators are and why they matter](#what-is-operator-)
-- [The **types** of operators in Java (Arithmetic, Relational, Logical, etc.)](#type-of-operators)
-- How **Operator Precedence** and **Associativity** work
-- The relationship between Type Conversion, Casting, and operators
-- Real-world examples and common mistakes
+- [The **types** of operators in Java (Arithmetic, Relational, Logical, etc.)](#types-of-operators)
+- [How **Operator Precedence** and **Associativity** work](#operator-precedence-and-associativity)
 
 ---
 
@@ -26,7 +24,7 @@ two, or three operands, and then return a result.
 
 Operand are something on that operators can be applied.
 
-### Type of operators
+### Types of operators
 
 | #  | Types of operators                                                 |
 |----|--------------------------------------------------------------------|
@@ -95,7 +93,7 @@ public class OperatorsDemo {
 
 - The **arithmetic operator** are `+  -  *  /  %`
 - if we apply any arithmetic operator between two variables `a` and `b` then
-  result type is always ` Max(int, typeof a, typeof b`.
+  result type is always `Max(int, typeof a, typeof b`.
 - `/ %` are the two operators which causes Arithmetic Exception.
 - [Arithmetic operator example](#-example)
 
@@ -123,12 +121,12 @@ public class OperatorsDemo {
 
 ```java
 private void incDecOperator() {
-    int a = 10;
+  int a = 10;
 // pre-increment  
-    System.out.println(++a); // output: 11  
+  System.out.println(++a);  // 11 (a becomes 11, then printed)
 // post-increment - here a = 11  
-    System.out.println(a++); // output: 11  
-// here a = 12
+  System.out.println(a++);  // 11 (printed first, then a becomes 12)
+  System.out.println(a);    // 12 (final value)
 }
 //    This thing same goes with Decrement
 ```
@@ -148,9 +146,9 @@ private void incDecOperator() {
 ```java
 private void relationalOp() {
     10 > 20 //false
-    'a' > 'b' //true
+    'a' > 'b' //false
     10 >= 10.0 //true
-    'a' > 125 //true
+    'a' > 125 //false
     true >= true //CE: can't be applied on boolean
 //    10 < 20 < 30 //CE:
 }
@@ -164,8 +162,8 @@ private void relationalOp() {
 
 ```java
 private void equalityOp() {
-    10 == 10.0 // ture
-    'a' == 97 // ture
+    10 == 10.0 // true
+    'a' == 97 // true
     true == false // false
     10.5 == 12.3 // false
 }
@@ -311,7 +309,7 @@ private void method() {
 
 ### 📊 Complete Precedence Table
 
-**Top = highest precedence** (pehle evaluate hoga)
+**Top = highest precedence** (evaluate first)
 
 | Level | Operators                                                       | Associativity | Category         |
 |-------|-----------------------------------------------------------------|---------------|------------------|

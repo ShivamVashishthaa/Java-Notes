@@ -19,7 +19,7 @@
 
 ---
 
-## 📖 Content
+### 📖 Content
 
 ### What is a Variable?
 
@@ -49,6 +49,23 @@ private void method() {
 
 ---
 
+### Primitive Data Types — Size & Range
+
+| Data Type | Size    | Range                                                   | Default  | Example             |
+|-----------|---------|---------------------------------------------------------|----------|---------------------|
+| `byte`    | 1 byte  | -128 to 127                                             | 0        | `byte b = 100;`     |
+| `short`   | 2 bytes | -32,768 to 32,767                                       | 0        | `short s = 1000;`   |
+| `int`     | 4 bytes | -2,147,483,648 to 2,147,483,647                         | 0        | `int i = 50000;`    |
+| `long`    | 8 bytes | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 | 0L       | `long l = 1198L;`   |
+| `float`   | 4 bytes | ±3.4e-38 to ±3.4e+38 (6–7 decimal digits)               | 0.0f     | `float f = 10.5f;`  |
+| `double`  | 8 bytes | ±1.7e-308 to ±1.7e+308 (15 decimal digits)              | 0.0d     | `double d = 99.99;` |
+| `char`    | 2 bytes | 0 to 65,535 (Unicode)                                   | '\u0000' | `char c = 'A';`     |
+| `boolean` | 1 bit*  | `true` or `false`                                       | false    | `boolean b = true;` |
+
+> **Note**: The size of `boolean` is JVM-dependent (1 bit theoretically, 1 byte practically).
+
+---
+
 ### How to Declare and Initialize Variables?
 
 - **Declaration**: Creating a variable without assigning a value.
@@ -61,12 +78,12 @@ Syntax: To Declare and Initialize primitive variables
 ```java
 // primitive variable
 public class Demo {
-    int x; // declaration
-    // x = 10 // wrong initialization
-    int y = 10; // declaration + initialization
+    int x;              // declaration (default 0)
+    // x = 10;          // ❌ Not allowed at class level
+    int y = 10;         // declaration + initialization
 
-    private void method() {
-        new Demo().x = 11;// initialization
+    public void method() {
+        x = 11;         // ✅ initialization inside method
     }
 }
 ```
@@ -196,6 +213,10 @@ public class Demo {
 }
 ```
 
+> **Note**: `new String()` hamesha **naya object** banata hai,
+> isliye `==` addresses compare karta hai → `false`.
+> Content compare karne ke liye `.equals()` use karo.
+
 ### Wrapper Classes
 
 Every primitive has a wrapper class — `int` → `Integer`, `char` → `Character`, etc.
@@ -208,14 +229,14 @@ Autoboxing and unboxing bridge the two.
 Java memory is divided into **Stack**, **Heap**, and **Metaspace**. Where a variable is stored depends on its **type**
 (primitive vs reference) and **kind** (local, instance, static).
 
-| **Variable Type**      | **Stored In**                         | **What's Stored** |
-|------------------------|---------------------------------------|-------------------|
-| **Local primitive**    | Stack                                 | Actual value      |
-| **Local reference**    | Stack (reference) + Heap (object)     | Address + object  |
-| **Instance primitive** | Heap (inside object)                  | Actual value      |
-| **Instance reference** | Heap (inside object) + Heap (object)  | Address + object  |
-| **Static primitive**   | Heap (Method Area / Metaspace)        | Actual value      |
-| **Static reference**   | Heap (Method Area / Metaspace) + Heap | Address + object  |
+| **Variable Type**      | **Stored In**                        | **What's Stored** |
+|------------------------|--------------------------------------|-------------------|
+| **Local primitive**    | Stack                                | Actual value      |
+| **Local reference**    | Stack (reference) + Heap (object)    | Address + object  |
+| **Instance primitive** | Heap (inside object)                 | Actual value      |
+| **Instance reference** | Heap (inside object) + Heap (object) | Address + object  |
+| **Static primitive**   | Metaspace (Method Area)              | Actual value      |
+| **Static reference**   | Metaspace + Heap                     | Address + object  |
 
 ### Key Points
 
@@ -350,12 +371,12 @@ private void method() {
 
 ```java
 private void method() {
-  var list = new ArrayList<String>();
-  var map = new HashMap<String, Integer>();
-  var numbers = List.of(1, 2, 3);
-  for (var num : numbers) {
-    System.out.println(num);
-  }
+    var list = new ArrayList<String>();
+    var map = new HashMap<String, Integer>();
+    var numbers = List.of(1, 2, 3);
+    for (var num : numbers) {
+        System.out.println(num);
+    }
 }
 ```
 
